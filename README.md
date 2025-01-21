@@ -98,17 +98,17 @@ To compile and use the `ft_printf` and `get_next_line` functions, follow these s
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/exam-rank-03.git
+   git clone https://github.com/iaceene/Exam_Rank_03
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd exam-rank-03
+   cd Exam_Rank_03
    ```
 
 3. Compile the source files:
    ```bash
-   make
+   #use cc or gcc
    ```
 
 4. Run the example code provided or write your own.
@@ -117,7 +117,6 @@ To compile and use the `ft_printf` and `get_next_line` functions, follow these s
 
 - C Compiler (gcc or clang)
 - Standard C Library (libc)
-- 42 Network coding standards
 
 ## Subjects
 
