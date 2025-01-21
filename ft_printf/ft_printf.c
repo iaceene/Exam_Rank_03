@@ -50,7 +50,6 @@ int ft_putnbr(int n)
     int     len;
 
     nig = 0;
-    len = get_len(n, 0);
     if (n >= (int)2147483647)
         return (ft_putstr("2147483647"));
     if (n <= (int)-2147483648)
@@ -59,6 +58,7 @@ int ft_putnbr(int n)
         return (ft_putstr("0"));
     if (n < 0)
     {
+        len = get_len(-n, 0);
         nig = 1;
         n = -n;
     }
@@ -68,7 +68,10 @@ int ft_putnbr(int n)
         s[len + 1] = '\0';
     }
     else
+    {   
+        len = get_len(n, 0);
         s[len] = '\0';
+    }
     while (n && nig == 0)
     {
         s[--len] = n % 10 + 48;
