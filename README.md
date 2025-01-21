@@ -12,6 +12,7 @@ This repository contains my solutions for **Exam Rank 03** at 42, which consists
 - [get_next_line](#get_next_line)
 - [Usage](#usage)
 - [Requirements](#requirements)
+- [Subjects](#Subjects)
 
 ## Overview
 
