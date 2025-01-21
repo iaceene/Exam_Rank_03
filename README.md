@@ -70,19 +70,22 @@ The `get_next_line` function reads from a file descriptor and returns the next l
 ### Example Usage
 
 ```c
-#include "get_next_line.h"
+char *get_next_line(int fd);
 
-int main() {
-    char *line;
-    int fd = open("example.txt", O_RDONLY);
-    
-    while (get_next_line(fd, &line)) {
-        printf("%s\n", line);
-        free(line);
-    }
+int main(void)
+{
+	char	*line;
 
-    close(fd);
-    return 0;
+	while ((line = get_next_line(0)) != NULL)
+	{
+		printf("%s", line);
+		free(line);
+		line = NULL;
+	}
+	printf("%s", line);
+	free(line);
+	system("leaks stud > studleak 2>&1");
+	return(0);
 }
 ```
 
